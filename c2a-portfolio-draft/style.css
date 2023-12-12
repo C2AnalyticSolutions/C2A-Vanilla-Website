@@ -1,6 +1,6 @@
 /* GENERAL */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap");
 
 * {
   margin: 0;
@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 html {
@@ -30,6 +30,13 @@ a,
   transition: all 300ms ease;
 }
 
+/*Icons*/
+
+/* Applying white color to the icon with ID 'white-icon' */
+#white-icon {
+  color: white;
+}
+
 /* DESKTOP NAV */
 
 nav,
@@ -43,7 +50,7 @@ nav {
   height: 10vh; /*Height of Navigation bar */
   font-weight: bold;
   z-index: 1; /*Layer 1*/
-  background-color: #fafafa; /* Black background color */
+  background-color: #000026; /* Black background color */
   /*position: fixed; /* Make it stick/fixed */
   top: 0; /* Stay on top */
   width: 100%; /* Full width */
@@ -57,7 +64,7 @@ nav {
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
   text-decoration-color: white;
 }
@@ -107,7 +114,7 @@ a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: white;
   transition: all 0.3 ease-in-out;
 }
 
@@ -164,36 +171,20 @@ a:hover {
   transform: none;
 }
 
-/* sticky-nav.... coming soon(Part of code)... */
-#sticky-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: transparent; /* Set your background color */
-  /* Add any other styling you want */
-  z-index: 100; /* Adjust as needed */
-  display: none;
-}
-
 /* Navigation Bar Left-Text settings */
 .logo {
-  color: #0277bd;
-  /* font-style: italic; */
+  color: white;
   font-weight: bold;
 }
 
 /* general */
 
 section {
-  padding-top: 4vh;
-  height: 96vh;
-  margin: 0 10rem;
-  box-sizing: fit-content;
+  height: 100%;
+  padding: 20px;
 }
 
-.section-container,
-#profile {
+#home {
   display: flex;
 }
 /* PROFILE SECTION */
@@ -222,13 +213,11 @@ section {
 
 .section_text p {
   font-weight: 600;
-  color: #0277bd;
+  color: #444444;
 }
 
 .section_text_p1 {
-  /* Text color for about us p1 */
   text-align: center;
-  color: #0277bd;
 }
 
 .section_text_p2 {
@@ -306,309 +295,56 @@ section {
 /* ABOUT SECTION */
 
 #about {
-  position: relative;
   background-color: #fafafa;
+  margin: auto;
 }
 
-.about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-
-.about-details-container {
-  justify-content: center;
-  flex-direction: column;
-}
-
-.about-containers,
-.about-details-container {
+.section-header {
+  color: black;
   display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
 }
 
-.about-pic {
-  border-radius: 2rem;
+.about-description h {
+  color: black;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  padding: 15px;
 }
 
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
+.about-description p {
+  color: #444444;
+  font-size: 15px;
+  text-align: center; /* Center align text within the description */
 }
 
-.details-containers {
-  padding: 1.5rem;
-  flex: 1;
-  background: white;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  text-align: center;
+.about-image-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align contents horizontally */
+  text-align: center; /* Center align text within the container */
 }
 
-.section-container {
-  gap: 4rem;
-  height: 80%;
-}
-
-.section_pic-container {
-  height: 400px; /*About us photo size*/
+.about-image-one img {
   width: 400px;
-  margin: auto 0;
-  padding-right: 200px;
+  height: 300px;
+  border-radius: 10%;
+  padding: 20px;
+}
+.about-image-one h2 {
+  margin-top: 10px; /* Adjust the margin as needed */
+  font-size: 20px; /* Adjust the font size as needed */
 }
 
 /* EXPERIENCE SECTION */
 
-#experience {
-  position: relative;
-  background-color: #fafafa;
-}
-.exp_icon {
-  cursor: default;
-  height: 2rem;
-}
-
-.experience-sub-title {
-  color: rgb(84, 84, 85);
-  font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
-}
-
-.experience-details-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-/* THIS WORKS FOR SOFTWARE ALIGNMENT */
-.article-container {
-  display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
-  gap: 0.5rem;
-}
-
-article {
-  display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
-}
-
-.article {
-  flex: 0 0 calc(50% - 20px); /* Adjust the width and spacing between articles */
-  margin: 10px 0;
-  padding: 10px;
-  background-color: #f0f0f0;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-article .icon {
-  cursor: default;
-}
-
-.article-container article {
-  flex: 0 0 100%; /* Make each article take up the full width */
-  margin-bottom: 10px; /* Add space between articles */
-}
-
 /* PROJECTS SECTION */
-
-#projects {
-  position: relative;
-  background-color: #fafafa;
-}
-
-.color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
-  width: 20%; /* width of videos */
-}
-
-.project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
-}
-
-.project-title {
-  margin: 1rem;
-  color: black;
-}
-
-.project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
-}
-
-/*responsive project display css*/
-.details-containers {
-  cursor: pointer;
-}
-
-.details-containers:hover {
-  background-color: #f0f0f0; /* Optional: Change the background color on hover */
-  cursor: default;
-}
-
-.project-details {
-  display: none;
-}
 
 /* Services SECTION */
 
-#services {
-  position: relative;
-  padding-top: 200px;
-  background-color: #fafafa;
-}
-
 /* CONTACT */
 
-#contact {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 70vh;
-}
-
-.contact-info-upper-container {
-  display: flex;
-  justify-content: center;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
-  margin: 2rem auto;
-  padding: 0.5rem;
-}
-
-.contact-info-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem;
-  font-size: larger;
-}
-
-.contact-icon {
-  cursor: default;
-}
-
-.email-icon {
-  height: 10rem;
-}
-
-.email-icon1 {
-  cursor: pointer;
-  height: 2.45rem;
-}
-
-/*form settings*/
-form {
-  max-width: 700px;
-  margin: 0 auto;
-  background: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px #999;
-  margin-top: 50px; /*Form Gap from top*/
-  margin-bottom: 100px; /*Form Gap from top*/
-}
-
-label {
-  display: block;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-input[type="email"],
-input[type="text"],
-textarea {
-  width: 95%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-textarea {
-  height: 100px;
-}
-
-input[type="submit"] {
-  background: #007bff;
-  color: #fff;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background: #0056b3;
-}
-
-#message {
-  resize: none;
-}
-
 /* FOOTER SECTION */
-
-footer {
-  height: 26vh;
-  margin: 0 1rem;
-}
-
-footer p {
-  text-align: center;
-}
-
-/* Go to top button settings */
-#myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  left: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: red; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 10px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
-}
-
-#myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
-}
-
-/*STYLES FOR FLOATING BUTTON (UPDATED)*/
-#book-me {
-  position: fixed;
-  top: 50%;
-  right: 0;
-  transform: rotate(90deg) translateX(50%);
-  transform-origin: 100% 0;
-  z-index: 99999;
-}
-#book-me a {
-  background: #24a0ed;
-  color: white;
-  display: inline-block;
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 15px 30px;
-  border-radius: 10px; /* Rounded corners */
-  text-decoration: none;
-}
