@@ -23,7 +23,7 @@
           <li>><a href="#home"> Home</a></li>
           <li>><a href="#about"> About</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#contacts">Contact Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
         </ul>
       </div>
     </nav>
@@ -152,8 +152,115 @@
     <hr />
 
     <!-- projects Section STARTS -->
-    <section id="projcets">
-      <h>testing</h>
+    <section id="projects">
+      <div class="section-header-projects">
+        <h>Projects</h>
+      </div>
+
+      <div class="project-cards">
+        <!-- First Project Card -->
+        <div class="card">
+          <img src="./assets/Life-Bridge-App.png" alt="Project 1" />
+          <div class="card-content">
+            <h3>Lifebridge Healthcare App</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Veritatis magnam ducimus nihil quasi quae consequatur voluptatibus
+              architecto molestiae eos blanditiis quibusdam numquam,
+              necessitatibus perferendis id labore vero expedita! Deserunt,
+              possimus?
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Second Project Card -->
+        <div class="card">
+          <img
+            src="./assets/Palliative Team Metrics Dashboard.jpeg"
+            alt="Project 2"
+          />
+          <div class="card-content">
+            <h3>Pallative Team Metrics Dashboard</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+              nemo odio et suscipit quisquam officia, veritatis laboriosam esse
+              beatae. Dolores minus, provident magnam non mollitia illum odit
+              quisquam aliquam quod?
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Third Project Card -->
+        <div class="card">
+          <img src="./assets/PSLM.jpeg" alt="Project 3" />
+          <div class="card-content">
+            <h3>Palliative Services Line Metrics</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur, eligendi? Voluptas mollitia harum facere! Ab, modi
+              est consequatur ad minus laudantium, repudiandae mollitia ipsum
+              vero omnis ut nemo, similique atque?
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Contact section starts-->
+    <section id="contact">
+      <div class="section-header">
+        <h>Contact us</h>
+      </div>
+      <hr />
+
+      <form
+        action="mailto:adminc2@c2analyticsolutions.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <label for="email">Enter Your Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <input type="submit" value="Send" />
+      </form>
+
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="email icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="mailto:adminc2@c2analyticsolutions.com"
+              >adminc2@c2analyticsolutions.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="linkedin icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a
+              class="general-links"
+              onclick="window.open('https://www.linkedin.com/in/c2-analytic-solutions-160bb9291', '_blank' );"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
     </section>
   </body>
 </html>
