@@ -452,7 +452,8 @@ section {
 
 /*form settings*/
 form {
-  max-width: 700px;
+  width: 900px;
+  height: auto;
   margin: 0 auto;
   background: #fff;
   padding: 20px;
@@ -471,7 +472,7 @@ label {
 input[type="email"],
 input[type="text"],
 textarea {
-  width: 95%;
+  width: 100%;
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
@@ -496,9 +497,18 @@ input[type="submit"] {
 footer {
   height: auto;
   margin: 0 1rem;
+  padding-bottom: 20px;
 }
 
 footer p {
   text-align: center;
   padding-top: 20px;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  color: red;
+  gap: 10px;
 }

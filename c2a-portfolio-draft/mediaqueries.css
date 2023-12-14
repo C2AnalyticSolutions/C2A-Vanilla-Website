@@ -1,7 +1,7 @@
-/* mediaqueries.css */
+/* mediaqueries.css*/
 
-/* Example media query for max-width: 390px */
-@media screen and (max-width: 390px) {
+/* Example media query for max-width: 575.98px */
+@media screen and (max-width: 575.98px) {
   /* Adjustments for smaller screens go here */
 
   /* HAMBURGER MENU */
@@ -98,8 +98,316 @@
 
   /* FOOTER SECTION */
   footer {
-    height: auto; /* Adjust as needed */
     text-align: center;
-    margin-top: 50px; /* Add margin to separate content */
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+}
+
+/* Small devices (tablets): */
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+  /* Adjustments for smaller tablets and larger phones in landscape mode go here */
+
+  /* HAMBURGER MENU */
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+  }
+
+  .menu-links {
+    position: relative;
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+  }
+
+  .menu-links.open {
+    display: block;
+  }
+
+  /* PROFILE SECTION */
+  .section_pic-container {
+    padding: 10px; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+  }
+
+  .section_pic-container img {
+    max-width: 100%; /* Adjust as needed */
+    height: auto;
+    width: auto; /* Ensures image doesn't exceed container width */
+    max-height: 300px; /* Limit the height to avoid excessive stretching */
+  }
+
+  .section_text {
+    padding: 10px; /* Adjust as needed */
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2rem; /* Adjust as needed */
+  }
+
+  /* ABOUT SECTION */
+  .about-image img {
+    max-width: 100%; /* Adjust as needed */
+    height: auto;
+  }
+
+  .about-text p {
+    font-size: 16px; /* Adjust as needed */
+  }
+
+  .about-services ul {
+    font-size: 16px; /* Adjust as needed */
+  }
+
+  /* PROJECTS SECTION */
+  .project-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%; /* Adjust as needed */
+    margin: 20px 0;
+  }
+
+  /* CONTACT SECTION */
+  form {
+    max-width: 90%; /* Adjust as needed */
+    margin: 0 auto;
+  }
+
+  /* FOOTER SECTION */
+  footer {
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+}
+
+/* Medium devices (tablets and small laptops): */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  /* Adjustments for tablets in landscape mode and smaller laptops go here */
+
+  /* HAMBURGER MENU */
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+  }
+
+  .menu-links {
+    position: relative;
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+  }
+
+  .menu-links.open {
+    display: block;
+  }
+
+  /* PROFILE SECTION */
+  .section_pic-container {
+    padding: 10px; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+  }
+
+  .section_pic-container img {
+    max-width: 100%; /* Adjust as needed */
+    height: auto;
+    width: auto; /* Ensures image doesn't exceed container width */
+    max-height: 300px; /* Limit the height to avoid excessive stretching */
+  }
+
+  .section_text {
+    padding: 10px; /* Adjust as needed */
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2rem; /* Adjust as needed */
+  }
+
+  /* ABOUT SECTION */
+  .about-image img {
+    max-width: 100%; /* Adjust as needed */
+    height: auto;
+  }
+
+  .about-text p {
+    font-size: 16px; /* Adjust as needed */
+  }
+
+  .about-services ul {
+    font-size: 16px; /* Adjust as needed */
+  }
+
+  /* PROJECTS SECTION */
+  .project-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%; /* Adjust as needed */
+    margin: 20px 0;
+  }
+
+  /* CONTACT SECTION */
+  form {
+    max-width: 90%; /* Adjust as needed */
+    margin: 0 auto;
+  }
+
+  /* FOOTER SECTION */
+  footer {
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+}
+
+/* Large devices (desktops and larger laptops): */
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  /* Adjustments for standard desktops, larger laptops, and some larger monitors go here */
+
+  /* HAMBURGER MENU */
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+  }
+
+  .menu-links {
+    position: relative;
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+  }
+
+  .menu-links.open {
+    display: block;
+  }
+
+  /* PROFILE SECTION */
+  .section_pic-container {
+    padding: 10px; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+  }
+
+  .section_pic-container img {
+    max-width: 100%; /* Adjust as needed */
+    height: auto;
+    width: auto; /* Ensures image doesn't exceed container width */
+    max-height: 300px; /* Limit the height to avoid excessive stretching */
+  }
+
+  .section_text {
+    padding: 10px; /* Adjust as needed */
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2rem; /* Adjust as needed */
+  }
+
+  /* ABOUT SECTION */
+  .about-image img {
+    max-width: 100%; /* Adjust as needed */
+    height: auto;
+  }
+
+  .about-text p {
+    font-size: 16px; /* Adjust as needed */
+  }
+
+  .about-services ul {
+    font-size: 16px; /* Adjust as needed */
+  }
+
+  /* PROJECTS SECTION */
+  .project-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%; /* Adjust as needed */
+    margin: 20px 0;
+  }
+
+  /* CONTACT SECTION */
+  form {
+    max-width: 90%; /* Adjust as needed */
+    margin: 0 auto;
+  }
+
+  /* FOOTER SECTION */
+  footer {
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin as needed */
   }
 }
